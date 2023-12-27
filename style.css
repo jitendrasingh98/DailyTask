@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin-top: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(8, 103, 67);
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,0.34226190476190477) 100%);
+    padding: 10px;
+}
+.todo{
+    width: 100%;
+    max-width: 540px;
+    background: rgba(29, 30, 30, 0.91);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    
+}
+img{
+    
+    width: 20px;
+    margin-left: 5px;
+}
+.todo h2{
+    color: chocolate;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #d0ddd4;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #7c827d;
+    color: rgb(2, 19, 51);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    color:white;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(ToDoList\image\3629308.png);
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    top :12px;
+    left: 10px;
+}
+ul li.checked{
+    color: aquamarine;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-color: aquamarine;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background: rgb(83, 123, 109);
+    border-radius: 50%;
+}
